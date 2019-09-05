@@ -2,6 +2,9 @@
     <Label class="action-bar-title" text="Home"></Label>
 </ActionBar>
 
-<GridLayout class="page">
-    <!-- Add your page content here -->
-</GridLayout>
+<StackLayout class="page">
+    <StackLayout >
+        <TextView #noteTextView class="text-area" hint="hello" [(ngModel)]="noteMessage"
+          returnKeyType="next"></TextView>
+      </StackLayout>
+</StackLayout>

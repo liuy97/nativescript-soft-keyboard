@@ -1,6 +1,2 @@
-import { Common } from './ns-soft-keyboard.common';
-export declare class NsSoftKeyboard extends Common {
-  // define your typings manually
-  // or..
-  // take the ios or android .d.ts files and copy/paste them here
-}
+export type SoftKeyboardCallbackFnType = (height: number) => void;
+export declare function registerSoftKeyboardCallback(func: SoftKeyboardCallbackFnType): void;

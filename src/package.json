@@ -1,7 +1,7 @@
 {
-	"name": "nativescript-ns-soft-keyboard",
+	"name": "nativescript-soft-keyboard",
 	"version": "1.0.0",
-	"description": "Your awesome NativeScript plugin.",
+	"description": "Detect soft keyboard Height",
 	"main": "ns-soft-keyboard",
 	"typings": "index.d.ts",
 	"nativescript": {
@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/liuy97/nativescript-ns-soft-keyboard.git"
+		"url": "https://github.com/liuy97/nativescript-soft-keyboard.git"
 	},
 	"scripts": {
 		"tsc": "npm i && tsc",
@@ -21,30 +21,30 @@
 		"tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\"",
 		"ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**' --exclude '**/platforms/**'",
 		"prepack": "npm run build.native",
-		"demo.ios": "npm run tsc && cd ../demo && tns run ios --emulator",
-		"demo.android": "npm run tsc && cd ../demo && tns run android --emulator",
-		"demo.reset": "cd ../demo && npx rimraf -- hooks node_modules platforms package-lock.json",
 		"demo-angular.ios": "npm run tsc && cd ../demo-angular && tns run ios --emulator",
 		"demo-angular.android": "npm run tsc && cd ../demo-angular && tns run android --emulator",
 		"demo-angular.reset": "cd ../demo-angular && npx rimraf -- hooks node_modules platforms package-lock.json",
-		"plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-ns-soft-keyboard && tns plugin add ../src && cd ../demo-angular && tns plugin remove nativescript-ns-soft-keyboard && tns plugin add ../src",
+		"plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-soft-keyboard && tns plugin add ../src && cd ../demo-angular && tns plugin remove nativescript-soft-keyboard && tns plugin add ../src",
 		"clean": "npm run demo.reset && npm run demo-angular.reset && npx rimraf -- node_modules package-lock.json && npm i"
 	},
 	"keywords": [
+		"keyboard",
+		"soft keyboard",
+		"height",
 		"NativeScript",
 		"JavaScript",
 		"Android",
 		"iOS"
 	],
 	"author": {
-		"name": "Your Name",
-		"email": "youremail@yourdomain.com"
+		"name": "Yong Liu",
+		"email": "liuy97@gmail.com"
 	},
 	"bugs": {
-		"url": "https://github.com/liuy97/nativescript-ns-soft-keyboard/issues"
+		"url": "https://github.com/liuy97/nativescript-soft-keyboard/issues"
 	},
 	"license": "Apache-2.0",
-	"homepage": "https://github.com/liuy97/nativescript-ns-soft-keyboard",
+	"homepage": "https://github.com/liuy97/nativescript-soft-keyboard",
 	"devDependencies": {
 		"tns-core-modules": "^6.0.0",
 		"tns-platform-declarations": "^6.0.0",

@@ -1,10 +1,14 @@
-import { NsSoftKeyboard } from 'nativescript-ns-soft-keyboard';
-console.log(new NsSoftKeyboard().message);
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { registerSoftKeyboardCallback } from "nativescript-soft-keyboard";
 
 @Component({
     moduleId: module.id,
     selector: "ns-app",
     templateUrl: "app.component.html"
 })
-export class AppComponent { }
+export class AppComponent implements OnInit {
+    ngOnInit() {
+        registerSoftKeyboardCallback((h) => console.log(h));
+    }
+
+}

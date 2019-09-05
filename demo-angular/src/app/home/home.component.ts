@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
     templateUrl: "./home.component.html"
 })
 export class HomeComponent implements OnInit {
-
+    noteMessage = '';
     constructor() {
         // Use the component constructor to inject providers.
     }

@@ -1,40 +1,26 @@
-# Your Plugin Name
+# nativescript-soft-keyboard
 
-Add your plugin badges here. See [nativescript-urlhandler](https://github.com/hypery2k/nativescript-urlhandler) for example.
-
-Then describe what's the purpose of your plugin. 
-
-In case you develop UI plugin, this is where you can add some screenshots.
-
-## (Optional) Prerequisites / Requirements
-
-Describe the prerequisites that the user need to have installed before using your plugin. See [nativescript-firebase plugin](https://github.com/eddyverbruggen/nativescript-plugin-firebase) for example.
+It is a challenge to get height of soft keyboard in Android and IOS. Android has not provided a direct way to read its height. But Nativescript app sometimes needs this information to achieve a good user interface.
 
 ## Installation
 
-Describe your plugin installation steps. Ideally it would be something like:
-
 ```javascript
-tns plugin add <your-plugin-name>
+tns plugin add nativescript-soft-keyboard
 ```
 
-## Usage 
-
-Describe any usage specifics for your plugin. Give examples for Android, iOS, Angular if needed. See [nativescript-drop-down](https://www.npmjs.com/package/nativescript-drop-down) for example.
+## Usage
 	
-	```javascript
-    Usage code snippets here
+    ```javascript
+        registerSoftKeyboardCallback((h) => console.log(h))
     ```)
+
 
 ## API
 
-Describe your plugin methods and properties here. See [nativescript-feedback](https://github.com/EddyVerbruggen/nativescript-feedback) for example.
-    
-| Property | Default | Description |
+| function | parameter | Description |
 | --- | --- | --- |
-| some property | property default value | property description, default values, etc.. |
-| another property | property default value | property description, default values, etc.. |
-    
+| registerSoftKeyboardCallback | callback | register a callback for new height of soft keyboard |
+
 ## License
 
 Apache License Version 2.0, January 2004
