@@ -6,6 +6,7 @@
 *.js.map
 *.log
 src/*.d.ts
+!jest.config.js
 !src/index.d.ts
 !src/references.d.ts
 !src/scripts/*.js
@@ -18,6 +19,7 @@ demo/*.d.ts
 !demo/references.d.ts
 demo/lib
 demo/platforms
+dist
 node_modules
 publish/src
 publish/package

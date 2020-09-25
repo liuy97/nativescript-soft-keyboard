@@ -1,0 +1,37 @@
+{
+  "name": "nativescript-soft-keyboard",
+  "version": "2.0.2",
+  "description": "Detect soft keyboard Height",
+  "main": "index",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "ios": "6.0.0",
+      "android": "6.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuy97/nativescript-soft-keyboard.git"
+  },
+  "keywords": [
+    "keyboard",
+    "soft keyboard",
+    "height",
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS"
+  ],
+  "author": {
+    "name": "Yong Liu",
+    "email": "liuy97@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/liuy97/nativescript-soft-keyboard/issues"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/liuy97/nativescript-soft-keyboard",
+  "readmeFilename": "README.md",
+  "bootstrapper": "@nativescript/plugin-seed"
+}
