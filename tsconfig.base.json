@@ -18,16 +18,16 @@
     "baseUrl": ".",
     "plugins": [
       {
-        "transform": "@nativescript/webpack/transformers/ns-transform-native-classes",
+        "transform": "@nativescript/webpack/dist/transformers/NativeClass",
         "type": "raw"
       }
     ],
     "paths": {
-      "@demo/shared": [
-        "tools/demo/index.ts"
-      ],
       "@nativescript/*": [
         "packages/*"
+      ],
+      "@demo/shared": [
+        "tools/demo/index.ts"
       ]
     }
   },
