@@ -10,6 +10,12 @@ Application.ios.addNotificationObserver(UIKeyboardDidShowNotification, (event) =
   }
 });
 
+Application.ios.addNotificationObserver(UIKeyboardDidHideNotification, (event) => {
+  if (softKeyboardCallback !== null) {
+    softKeyboardCallback(0);
+  }
+});
+
 export function registerSoftKeyboardCallback(callback: SoftKeyboardCallbackFnType) {
   softKeyboardCallback = callback;
 }
