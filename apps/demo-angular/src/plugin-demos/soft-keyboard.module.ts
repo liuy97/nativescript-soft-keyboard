@@ -4,7 +4,7 @@ import { SoftKeyboardComponent } from './soft-keyboard.component';
 
 @NgModule({
 	imports: [NativeScriptCommonModule, NativeScriptRouterModule.forChild([{ path: '', component: SoftKeyboardComponent }])],
-	declarations: [SoftKeyboardComponent],
-	schemas: [NO_ERRORS_SCHEMA],
+  declarations: [SoftKeyboardComponent],
+  schemas: [ NO_ERRORS_SCHEMA]
 })
 export class SoftKeyboardModule {}

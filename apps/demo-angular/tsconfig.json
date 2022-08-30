@@ -1,25 +1,11 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "rootDirs": [
-      ".",
-      "../.."
-    ],
-    "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "src/*"
-      ],
-      "@demo/shared": [
-        "../../tools/demo/index.ts"
-      ],
-      "@nativescript/*": [
-        "../../dist/packages/*"
-      ]
+      "~/*": ["src/*"],
+      "@demo/shared": ["tools/demo/index.ts"]
     }
   },
-  "files": [
-    "./references.d.ts",
-    "./src/main.ts"
-  ]
+  "files": ["./references.d.ts", "./src/main.ts", "./src/polyfills.ts"],
+  "include": ["../../packages/**/references.d.ts"]
 }

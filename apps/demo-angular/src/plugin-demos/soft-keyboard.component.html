@@ -1,8 +1,9 @@
 <ActionBar title="soft-keyboard" class="action-bar"> </ActionBar>
 <StackLayout class="p-20">
-	<ScrollView class="h-full">
-		<StackLayout>
-			<Button text="Test soft-keyboard" (tap)="demoShared.testIt()" class="btn btn-primary"></Button>
-		</StackLayout>
-	</ScrollView>
+  <ScrollView class="h-full">
+    <GridLayout rows="auto *">
+      <Button row="0" text="show/hide soft-keyboard" (tap)="demoShared.testIt()" class="btn btn-primary"></Button>
+      <TextView row="1" height="400" text="hello" backgroundColor="#f5f5f5"></TextView>
+    </GridLayout>
+  </ScrollView>
 </StackLayout>
