@@ -1,10 +1,11 @@
 import { Observable, EventData, Page } from '@nativescript/core';
 import { DemoSharedSoftKeyboard } from '@demo/shared';
-import {} from '@nativescript/soft-keyboard';
 
 export function navigatingTo(args: EventData) {
-	const page = <Page>args.object;
-	page.bindingContext = new DemoModel();
+  const page = <Page>args.object;
+  page.bindingContext = new DemoModel();
 }
 
-export class DemoModel extends DemoSharedSoftKeyboard {}
+export class DemoModel extends DemoSharedSoftKeyboard {
+
+}

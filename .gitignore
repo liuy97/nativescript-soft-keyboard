@@ -26,3 +26,6 @@ publish/package
 demo/report/report.html
 demo/report/stats.json
 !demo-vue/app/app.js
+yarn.lock
+**/package-lock.json
+!tools/workspace-scripts.js

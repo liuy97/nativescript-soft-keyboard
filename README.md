@@ -24,7 +24,7 @@ npm run setup
 npm start
 ```
 
-- @nativescript/soft-keyboard
+- nativescript-soft-keyboard
 
 # How to use?
 

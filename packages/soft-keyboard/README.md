@@ -14,24 +14,6 @@ tns plugin add nativescript-soft-keyboard
 ```
 
 ## Usage
-Step 1: add repository in app.gradle
-
-```
-repositories {
-  maven {
-    url  "https://jitpack.io"
-  }
-}
-```
-
-Step 2: add dependency in app.gradle
-
-```
-dependencies {
-    implementation 'com.github.liuy97:KeyboardHeightProvider:1.0.1'
-}
-```
-
 
 ```javascript
     registerSoftKeyboardCallback((h) => console.log(h))
@@ -49,7 +31,7 @@ dependencies {
 Apache License Version 2.0, January 2004
 
 ```javascript
-ns plugin add @nativescript/soft-keyboard
+ns plugin add nativescript-soft-keyboard
 ```
 
 
